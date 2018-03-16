@@ -18,6 +18,28 @@ public class Student extends Human {
 	};
 
 	@Override
+	public boolean equals(Object arg0) {
+		if (this == arg0)
+			return true;
+		if (arg0 == null)
+			return false;
+		if (getClass() != arg0.getClass())
+			return false;
+		Student other = (Student) arg0;
+		if (specialization == null) {
+			if (other.specialization != null)
+				return false;
+		} else if (!specialization.equals(other.specialization))
+			return false;
+		if (level != other.level) {
+			return false;
+		}
+		if (super.equals(arg0))
+			return true;
+		return super.equals(arg0);
+	}
+
+	@Override
 	public void getInfo() {
 		String sexPrint;
 		if (isSex()) {
@@ -56,5 +78,7 @@ public class Student extends Human {
 		return (getSurname() + " " + getName() + " " + sexPrint + " " + getAge() + " " + specialization + " Level: "
 				+ level);
 	}
+
+	
 
 }

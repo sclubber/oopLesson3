@@ -1,5 +1,6 @@
 package com.icloud.sclubber;
 
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -23,6 +24,8 @@ public class Main {
 		System.out.println(groupOne.findStudent("Domoslavskyi"));
 		System.out.println();
 		System.out.println(groupOne.toString());
+		
+		
 	}
 
 }

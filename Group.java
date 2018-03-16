@@ -1,7 +1,5 @@
 package com.icloud.sclubber;
 
-import java.util.Arrays;
-
 public class Group {
 	private Student[] studentsArray = new Student[10];
 
@@ -51,7 +49,6 @@ public class Group {
 	@Override
 	public String toString() {
 		Student temp;
-
 		for (int i = 0; i < studentsArray.length; i++) {
 			for (int j = i; j < studentsArray.length; j++) {
 				try {
